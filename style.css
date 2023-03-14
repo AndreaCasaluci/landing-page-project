@@ -15,18 +15,22 @@ body{
 }
 .navbar div{
     color: #F9FAF8;
-    margin:12px;
-    margin-left:100px;
+   /* margin:12px;
+    margin-left:100px;*/
     align-items: center;
-    font-size: x-large;
-    margin-top: 1%;
+    font-size: 24px;
+    margin-top: 1.5%;
+    padding-left: 15%;
+    width: fit-content;
 }
 .nav-links{
     margin:0px;
     padding: 0px;
     color: #F9FAF8;
     display: flex;
-    font-size: medium;
+    font-size: 18px important!;
+    padding-right: 15%;
+    width: fit-content;
 }
 .nav-links a{
     color: #e5e7ebd4;
@@ -47,54 +51,64 @@ body{
 }
 
 .navbar ul{
-    margin-right:100px;
+   /* margin-right:100px;*/
     list-style-type:none;
 }
 
 .hero{
     background-color: #1F2937;
-    padding-left:100px;
+    /*padding-left:100px;*/
+    padding-left:15%;
+    padding-right:15%;
     display: flex;
-    padding-top:25px;
-    padding-bottom: 50px;
+    /*padding-top:25px;
+    padding-bottom: 50px;*/
+    padding-top:4%;
+    padding-bottom:6%;
     justify-content: space-between;
     color:#F9FAF8;
     align-items: center;
 }
 .hero div{
-    max-width: 300px;
-    width: fit-content;
+   /* max-width: 300px; */
+    width: fit-content; 
+    max-width: 90%;
     flex: 1;
     /*justify-content: center;*/
     justify-content: center;
     align-content: center;
     /*text-align: center;*/
 }
-.hero.hero-verticaldiv{
-    flex-direction: vertical;
+.hero .hero-verticaldiv{
+    width: 100%;
+    flex-direction: column;
     display: flex;
+    height: 50%;
     font-size: xx-large;
     font-weight: 900;
     justify-content:space-between !important;
-    align-items: center;
+    align-items:flex-start;
 }
 .hero-verticaldiv div{
     color:#F9FAF8;
     justify-content: space-between;
+    flex:1;
     font-weight: 900;
-    font-size: xx-large;
-    margin-bottom: 5px;
+    font-size: 48px;
+   /* margin-bottom: 5px;*/
+    margin-bottom: 1.5%;
 }
 .hero-verticaldiv .two{
     color: #e5e7ebd4;
-    font-size:small;
+    font-size:18px;
     font-weight: 200;
 }
 .hero .three{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-right: 100px;
+    justify-content: flex-end;
+    /*margin-right: 100px;*/
 }
 .image{
     border:2px;
@@ -108,19 +122,28 @@ body{
 .image p{
     color: #d7dbe3;
     padding:25%;
-    font-size: small;
+    font-size: 18px;
     text-align: center !important;
 }
 .signup-button{
     color: #F9FAF8;
-    padding-left: 10px;
+    /*padding-left: 10px;
     padding-right: 10px;
     padding-top: 4px;
-    padding-bottom: 4px;
+    padding-bottom: 4px;*/
+    margin-top:1%;
     background-color: #3882F6;
+    border-radius: 7px;
+  /*  margin-top:10px;
+    font-size: medium !important;*/
+    font-size: 22px !important;
+    align-content: center;
     border-radius: 5px;
-    margin-top:10px;
-    font-size: medium !important;
+    max-width:fit-content;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
 }
 .signup-button a{
     text-decoration: none;
@@ -131,19 +154,21 @@ body{
 }
 .infobox{
     background-color: white;
-    margin-top: 3%;
+    padding-top:2%;
     height:35%
 }
 .infobox div{
     color: #1F2937;
     justify-content: center;
-    margin-bottom: 20px;
-    margin-top:20px;
+   /* margin-bottom: 20px;
+    margin-top:20px; */
     text-align: center;
     font-size: 36px;
     font-weight: 800;
 }
 .horizontaldiv {
+    padding-top:3%;
+    padding-bottom: 3%;
     display: flex;
     align-items: center;
     align-content: center;
@@ -169,7 +194,7 @@ div.imagebox{
     width: 50%;
     border:3px solid;
     border-color: #3882F6;
-    border-radius: 10px;
+    border-radius: 7px;
     align-items: center;
     margin-top: 5px;
     margin-bottom: 2px;
@@ -177,8 +202,15 @@ div.imagebox{
     justify-content: center;
     margin-left: 25%;
 }
+div.imagebox:hover{
+    background-color: #3882F6;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
 div.imagedesc{
     margin-left: 25%;
+    padding-top: 2%;;
     width: 50%;
     color: #bbbcbeaf;
     text-align: center;
@@ -208,9 +240,9 @@ div.imagedesc{
 }
 .whosaid{
     flex:1;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bolder;
-    padding-left: 70%;
+    padding-left: 68%;
     margin-top:3%;
 }
 .bottombox{
@@ -267,7 +299,7 @@ div.imagedesc{
     text-align: center;
     max-width: 25%;
     align-content: center;
-    border-radius: 5px;
+    border-radius: 7px;
     max-width:fit-content;
     padding: 0.5%;
     padding-left: 3%;
